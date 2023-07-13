@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="">
+            function search() {
+                const searchValue = document.getElementById("searchInput").value;
+                const resultDiv = document.getElementById("result");
+                resultDiv.innerHTML = "You are searching for: " + searchValue;
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="searchInput">
+        <button onclick="search()">Search</button>
+        <div id="result"></div>
+    </body>
+</html>

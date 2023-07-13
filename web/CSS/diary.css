@@ -1,0 +1,149 @@
+body {
+    background-image: url("../Images/diary-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*position: fixed;*/
+    width: 100%;
+}
+
+.top-menu-bar {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    display: flex;
+    /*background-color: #BCFEFF;*/
+    align-items: center;
+    border-radius: 10px;
+    width: 80%;
+}
+.diary-icon {
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+}
+.diary-icon img {
+    width: 100%;
+    width: 100%;
+}
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 30px;
+    width: 60%;
+}
+.menu-bar img {
+    width: 50px;
+    height: 50px;
+}
+.top-menu-bar a {
+    text-decoration: none;
+    font-size: 150%;
+    color: blue
+}
+
+#sidebar-icon:hover {
+    cursor: pointer;
+}
+
+#sidebar {
+    position: fixed;
+    top: 100%;
+    left: 0;
+    width: fit-content;
+    background-color: #ccc;
+    /*background-color: black;*/
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border-radius: 5px;
+}
+
+#sidebar li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+#sidebar.show {
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+    width: fit-content;
+    padding: 0px 10px 0px 0px;
+    border-radius: 5px;
+}
+.sidebar-element:hover {
+    background-color: grey;
+}
+
+#writeDiary {
+    border-radius: 10px;
+    width: fit-content;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#writeDiary:hover {
+    background-color: aquamarine;
+    transform: scale(1.1);
+    transition: all .15s;
+    cursor: pointer;
+}
+
+#writeDiary:active {
+    transform: scale(0.9);
+    transition: all .15s;
+}
+
+.content {
+/*    overflow: scroll;
+    height: 1000px;*/
+}
+
+.listDiary {
+    margin: 20px auto;
+    display: flex;
+    width: 80%;
+    /*height: 30px;*/
+    box-shadow: 0px 0px 10px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    justify-content: space-around;
+}
+
+.listDiary:hover {
+    background-color: wheat;
+    transform: scale(1.1);
+    transition: all .15s;
+}
+
+.listDiary:active {
+    transform: scale(0.9);
+    transition: all .15s;
+}
+
+.content-diary {
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.diary-link {
+    width: fit-content;
+}
+
+
